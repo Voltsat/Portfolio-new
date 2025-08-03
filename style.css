@@ -271,7 +271,7 @@ body {
 }
 
 /* Buat Tablet */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1069px) {
     .my-name {
         font-size: 1.2em;
         margin-top: 2vh;
@@ -292,10 +292,15 @@ body {
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1800px) {
+@media (min-width: 1070px) and (max-width: 1800px) {
+    .my-name {
+        margin-top: 5vh;
+    }
+
     #profile {
         width: 320px;
         right: 2%;
         top: 58%;
     }
+
 }

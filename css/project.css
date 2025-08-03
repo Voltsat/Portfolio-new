@@ -167,13 +167,19 @@ nav hr {
     display: flex;
 }
 
+.judul-wrap {
+    width: 100%;
+    height: 100vh;
+
+    margin-top: 15vh;
+    margin-left: 10vw;
+}
+
 .judul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    margin-top: 15vh;
-    margin-left: 10vw;
+    position: fixed;
     
 }
 
