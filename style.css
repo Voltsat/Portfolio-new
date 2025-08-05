@@ -295,6 +295,7 @@ body {
 @media (min-width: 1070px) and (max-width: 1800px) {
     .my-name {
         margin-top: 5vh;
+        font-size: 2em;
     }
 
     #profile {

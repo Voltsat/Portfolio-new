@@ -384,6 +384,8 @@ body {
 
 }
 
-@media (min-width: 901px) and (max-width: 1380px) {
-    
+@media (min-width: 1070px) and (max-width: 1800px) {
+    .judul {
+        margin-left: 25%;
+    }
 }
