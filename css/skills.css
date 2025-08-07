@@ -159,8 +159,6 @@ nav hr {
 
 .skills {
     display: flex;
-    justify-content: flex-end;
-
     width: 100%;
 }
 
@@ -169,8 +167,9 @@ nav hr {
     flex-direction: column;
 
     align-items: center;
-    margin-top: 10vh;
-    margin-right: 5vw;
+    top: 20%;
+    right: 5%;
+    position: absolute;
 
 }
 
@@ -184,6 +183,74 @@ nav hr {
     color: white;
     font-size: 5em;
 }
+
+
+.wrapper-skill {
+    color: white;
+    margin-top: 5vh;
+    margin-left: 5vw;
+
+    margin-bottom: 10vh;
+}
+
+.wrapper-skill hr {
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.416);
+    border: none;
+    border-radius: 5px;
+    
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    margin-left: -1rem;
+    width: 115%;
+}
+
+.skill-box-wrap {
+    display: flex;
+    gap: 20px;
+
+    max-width: 50vw;
+    width: fit-content;
+}
+
+.skill-box {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100px;
+    padding: 10px 15px;
+
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.skill-box:first-child {
+    margin-left: 2vw;
+}
+
+
+.skill-box img {
+    width: 4vw;
+}
+
+.skill-box p {
+    font-size: 1.2em;
+    font-family: 'Karla', sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
 
 body {
     background-color: #617594;
