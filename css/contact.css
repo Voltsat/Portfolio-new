@@ -157,6 +157,111 @@ nav hr {
     transform: translateX(0);
 }
 
+.judul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    right: 8%;
+    top: 20%;
+}
+
+.judul h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+
+    animation: Float 3s ease-in-out infinite;
+}
+
+@keyframes Float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.judul img {
+    width: 360px;
+    background-color: #546886;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 8vw;
+    margin-top: 15vh;
+}
+
+.wrapper h1 {
+    color: white;
+    font-size: 2em;
+    max-width: 30vw;
+
+    background-color: #546886;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.wrapper button {
+    border: none;
+    background-color: #318ea5;
+    padding: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+
+.wrapper button:hover {
+    scale: 1.1;
+}
+
+.link-medsos {
+    list-style: none;
+}
+
+.link-medsos a {
+    text-decoration: none;
+    color: 	#ffffff;
+    transition: color 0.3s ease;
+
+    width: 300px;
+    border-radius: 4px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+.link-medsos a:hover {
+    color: 	#c9c9c9;
+    background-color: rgba(202, 202, 202, 0.205);
+}
+
+.link-medsos svg {
+    width: 48px;
+    height: 48px;
+}
+
 
 body {
     background-color: #617594;

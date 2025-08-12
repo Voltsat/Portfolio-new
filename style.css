@@ -54,6 +54,8 @@
     font-size: 0.8em;
 }
 
+
+
 .links {
     display: flex;
     flex-direction: column;
@@ -175,7 +177,29 @@ nav hr {
 .my-name h2 {
     margin-right: 2vw;
     color: #aacdd3;
+
+    background: linear-gradient(90deg, #4294ff, #4790ff, #4998ff);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s ease infinite;
+    animation: float 3s ease-in-out infinite;
+
+
 }
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
 
 .my-name img {
     display: flex;
