@@ -183,9 +183,6 @@ nav hr {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientMove 5s ease infinite;
-    animation: float 3s ease-in-out infinite;
-
-
 }
 
 @keyframes gradientMove {
@@ -204,6 +201,7 @@ nav hr {
 .my-name img {
     display: flex;
     margin-left: 3vw;
+    
 }
 
 #aboutme {
@@ -221,8 +219,12 @@ nav hr {
 
     width: 420px;
     background-color:#546886;
-    padding: 15px;
+    padding: 5px;
     border-radius: 50%;
+
+    border: 4px solid rgba(49, 123, 207, 0.616);
+
+    animation: float 3s ease-in-out infinite;
 }
 
 #jam-digital {

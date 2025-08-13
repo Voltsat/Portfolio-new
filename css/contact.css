@@ -238,10 +238,12 @@ nav hr {
 
 .link-medsos a {
     text-decoration: none;
-    color: 	#ffffff;
+    color: 	#cde8ff;
     transition: color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    width: 300px;
+    width: 420px;
+    height: 115px;
     border-radius: 4px;
     padding: 5px;
 
@@ -250,16 +252,51 @@ nav hr {
     margin-top: 20px;
     
     background-color: rgba(255, 255, 255, 0.205);
+    transition: 0.3s ease-in-out;
 }
 
 .link-medsos a:hover {
-    color: 	#c9c9c9;
-    background-color: rgba(202, 202, 202, 0.205);
+    transform: translateY(-8px);
+    border: 2px solid rgb(91, 173, 206);
+}
+
+.link-medsos a:hover svg {
+    background-color: #617594b7;
+}
+
+.teksbawah {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.link-medsos li {
+    font-size: 1.7em;
+}
+
+.username {
+    color: rgb(78, 89, 112);
+    text-align: end;
+    margin-right: 5%;
+}
+
+.link-medsos i {
+    width: 48px;
+    height: 48px;
+    
 }
 
 .link-medsos svg {
     width: 48px;
     height: 48px;
+
+    background-color: #6175944b;
+    padding: 6px;
+    border-radius: 15px;
+
+    margin-left: 5%;
+    color: white;
 }
 
 

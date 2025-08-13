@@ -380,5 +380,12 @@ body {
 @media (min-width: 1251px) and (max-width: 1800px) {
     .judul {
         position: static;
+        height: 100%;
+        justify-content: center;
+        margin-left: 3vw;
+    }
+
+    .judul img {
+        width: 360px;
     }
 }
