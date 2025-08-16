@@ -158,21 +158,31 @@ nav hr {
 }
 
 .judul {
+    width: calc(100vw - 240px);
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    position: absolute;
-    right: 8%;
-    top: 20%;
+    justify-content: center;
+    align-items: center;
 }
 
 .judul h1 {
     color: white;
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-top: 2.5vh;
 
     animation: Float 3s ease-in-out infinite;
+}
+
+.judul hr {
+    width: 8%;
+    height: 4px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #546886;
+    margin-top: 5px;
+    animation: Float 20s ease-in-out infinite;
 }
 
 @keyframes Float {
@@ -198,42 +208,16 @@ nav hr {
 
 .wrapper {
     display: flex;
-    flex-direction: column;
 
     margin-left: 8vw;
     margin-top: 15vh;
 }
 
-.wrapper h1 {
-    color: white;
-    font-size: 2em;
-    max-width: 30vw;
-
-    background-color: #546886;
-    padding: 20px;
-    border-radius: 4px;
-}
-
-.wrapper button {
-    border: none;
-    background-color: #318ea5;
-    padding: 10px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    margin-left: auto;
-    margin-right: 15px;
-    margin-top: 10px;
-
-    cursor: pointer;
-}
-
-.wrapper button:hover {
-    scale: 1.1;
-}
-
 .link-medsos {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    gap: 20px;
 }
 
 .link-medsos a {
@@ -249,7 +233,6 @@ nav hr {
 
     display: flex;
     align-items: center;
-    margin-top: 20px;
     
     background-color: rgba(255, 255, 255, 0.205);
     transition: 0.3s ease-in-out;
@@ -267,6 +250,7 @@ nav hr {
 .teksbawah {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
     
     width: 100%;
 }
@@ -277,8 +261,6 @@ nav hr {
 
 .username {
     color: rgb(78, 89, 112);
-    text-align: end;
-    margin-right: 5%;
 }
 
 .link-medsos i {
@@ -288,7 +270,7 @@ nav hr {
 }
 
 .link-medsos svg {
-    width: 48px;
+    width: 54px;
     height: 48px;
 
     background-color: #6175944b;
@@ -299,6 +281,70 @@ nav hr {
     color: white;
 }
 
+.contactform {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 60vh;
+
+    margin-left: 5vw;
+    background-color: #546886;
+    border: white 1px solid;
+    border-radius: 10px;
+
+    padding: 20px;
+    gap: 20px;
+}
+
+.contactform label {
+    color: white;
+    font-size: 1.2em;
+}
+
+.contactform input {
+    width: 100%;
+    height: 20%;
+    padding-left: 15px;
+
+    border-radius: 5px;
+}
+
+.contactform textarea {
+    resize: none;
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+input,textarea {
+    outline: none;
+    border: 2px solid #ccc;
+}
+
+input:focus,textarea:focus {
+    box-shadow: 0 0 12px 2px rgba(37, 107, 134, 0.6); 
+    border: 2px solid #0173c0;
+}
+
+.contactform button {
+    width: 20%;
+    height: 25%;
+
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    background-color: #027ac0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.05em;
+}
+
+.contactform button:hover {
+    transform: translateY(-4px);
+}
 
 body {
     background-color: #617594;
